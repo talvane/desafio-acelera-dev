@@ -148,16 +148,12 @@ const crypto = require('crypto');
             
             formdata.append('answer', fs.createReadStream(jsonFile));
 
-            console.log('antes do post ----->>>>');
-
             const { data } = await axios.post(`${api.defaults.baseUrl}/submit-solution`, formdata, {
                 headers: formdata.getHeaders(),
                 params: {
                     token: token,
                 },
             });
-
-            console.log('try data ----->>> ', data);
 
             return data;
 

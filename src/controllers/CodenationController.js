@@ -13,7 +13,6 @@ module.exports = {
             const txtResumeCrypt = await utils.cryptoResumeTxt(txtDecrypt); //msg resumo
             finalJson = await utils.updateFile(data, txtDecrypt, txtResumeCrypt); //json atualizado
             returndata = await utils.postChallenge(token);
-            console.log('returndata', returndata);
         } else {
             return response.json({ error: "Not possible write file answer." });
         }
