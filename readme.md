@@ -10,7 +10,7 @@
 ```
 
 > Fornece uma api em Node + Express + Axios, recebendo como parametro o Token e devolvendo um score calculado pela Codenation.
-> Após subir o projeto, acesse via Insomnia: http://localhost:3333, o método POST passando com query param: TOKEN.
+> Após subir o projeto, acesse via Insomnia: http://localhost:3333/proces, o método POST passando com query param: TOKEN.
 ---
 
 #### Se curtiu, não esquece de deixar a :star:
