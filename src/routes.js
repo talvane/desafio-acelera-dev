@@ -5,9 +5,9 @@ const CodenationController = require('../src/controllers/CodenationController');
 const routes = express.Router();
 
 routes.post('/proces', celebrate({
-    [Segments.QUERY]: Joi.object().keys({
+    [Segments.HEADERS]: Joi.object({
         token: Joi.string().required().length(40),
-    })
+    }).unknown(),
 }), CodenationController.proces);
 
 module.exports = routes;
